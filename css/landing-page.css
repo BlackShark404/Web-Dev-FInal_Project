@@ -1,0 +1,197 @@
+:root {
+    --primary-color: rgba(0, 128, 0, 0.80);
+    --primary-light: rgba(0, 128, 0, 0.15);
+    --primary-bg: rgb(241, 253, 238);
+    --glass-bg: rgba(255, 255, 255, 0.2);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-shadow: rgba(31, 38, 135, 0.37);
+    --text-dark: rgba(0, 0, 0, 0.8);
+    --transition-fast: 0.2s ease-out;
+}
+
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--primary-bg);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    transition: none;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.625rem;
+    transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.nav-link:not(.in-offcanvas):hover {
+    color: var(--primary-color);
+}
+
+.nav-link:not(.in-offcanvas):hover::after {
+    opacity: 1;
+}
+
+/* Offcanvas */
+.offcanvas {
+    z-index: 1045;
+    transition: transform var(--transition-fast);
+}
+
+.offcanvas-backdrop {
+    display: none !important;
+}
+
+/* Glass effect */
+@media (max-width: 991.98px) {
+    .glass-effect {
+        background: var(--glass-bg) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-left: 1px solid var(--glass-border);
+        box-shadow: 0 8px 32px 0 var(--glass-shadow);
+        transition: all var(--transition-fast);
+    }
+
+    .nav-link.in-offcanvas:hover {
+        background-color: var(--primary-light);
+        color: var(--text-dark);
+    }
+
+    .offcanvas-body,
+    .offcanvas-header {
+        opacity: 0;
+        transform: translateX(10px);
+        transition: all 0.15s ease-out;
+    }
+
+    .offcanvas.show .offcanvas-body,
+    .offcanvas.show .offcanvas-header {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+    .offcanvas {
+        background: transparent !important;
+    }
+}
+
+/* Dropdown menu styles */
+.dropdown-toggle {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.dropdown-toggle:hover::after {
+    opacity: 1;
+}
+
+.dropdown-menu {
+    background-color: var(--primary-bg);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    color: var(--text-dark);
+    transition: background-color var(--transition-fast);
+}
+
+
+.dropdown-item:hover {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+}
+
+/* Divider */
+.divider {
+    display: none;
+    height: 5px;
+    background-color: var(--primary-color);
+    margin: 5px 0;
+    width: 100%;
+    transition: opacity 0.15s ease-out;
+    opacity: 0;
+}
+
+.divider.show {
+    opacity: 1;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    /* Add space for fixed navbar */
+}
+
+.hero__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.image-link img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.image-link img:hover {
+    transform: scale(1.1);
+}
