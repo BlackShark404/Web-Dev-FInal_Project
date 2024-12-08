@@ -30,6 +30,11 @@
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     transition: none;
+    margin-bottom: 2rem;
+}
+
+body {
+    padding-top: 3rem;
 }
 
 .nav-link {
