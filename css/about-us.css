@@ -24,17 +24,50 @@
     background-color: var(--primary-bg);
 }
 
-.about .tab-class .nav .nav-item a.active,
-.about .tab-class .nav .nav-item a.active span {
-    /* background: rgba(1, 151, 1, 0.74) !important; */
-}
-
-
-
 .custom-img-container img {
-    /* Maintain aspect ratio */
     object-fit: cover;
-    /* Adjust image fit */
 }
 
-/*** About End ***/
+/* Navigation Tabs Hover Effects */
+.about-us-container .nav-item a {
+    position: relative;
+    transition: all var(--transition-fast);
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.about-us-container .nav-item a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width var(--transition-fast);
+}
+
+.about-us-container .nav-item a:hover {
+    background-color: var(--primary-light) !important;
+    color: var(--text-green) !important;
+}
+
+.about-us-container .nav-item a:hover::before {
+    width: 100%;
+}
+
+.about-us-container .nav-item a.active {
+    background-color: var(--primary-light) !important;
+    color: var(--text-green) !important;
+}
+
+.about-us-container .nav-item a.active::before {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+/* Subtle shadow and lift effect on hover */
+.about-us-container .nav-item a:hover {
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.1);
+    transform: translateY(-2px);
+}
