@@ -10,6 +10,8 @@
     --transition-fast: 0.2s ease-out;
 }
 
+
+
 /* Reset and base styles */
 *,
 *::before,
@@ -511,3 +513,36 @@ a:hover {
     background-color: var(--accent-color);
 }
 
+.carousel-item {
+    height: 500px;
+    /* Fixed height for consistent look */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    /* Ensures images cover the entire space while maintaining aspect ratio */
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.bogo_carousel {
+    margin: 50px 0;
+}
+
+.govph-link {
+    margin-right: 12px;
+    font-size: 19px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+}
+
+.govph-link:hover {
+    color: green;
+}

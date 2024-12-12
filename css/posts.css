@@ -1,0 +1,60 @@
+:root {
+    --primary-color: rgba(0, 128, 0, 0.80);
+    --primary-light: rgba(0, 128, 0, 0.15);
+    --primary-bg: rgb(227, 248, 223);
+    --text-dark: rgba(0, 0, 0, 0.8);
+    --text-green: rgb(0, 128, 0);
+}
+
+body {
+    color: var(--text-dark);
+}
+
+.blog-post-image {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.recent-post-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+}
+
+.post-meta {
+    color: var(--text-green);
+    margin-bottom: 20px;
+}
+
+.sidebar-recent-post {
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebar-recent-post:last-child {
+    border-bottom: none;
+}
+
+h1,
+h3,
+h4 {
+    color: var(--text-green);
+}
+
+.blockquote {
+    background-color: var(--primary-light) !important;
+    border-left: 4px solid var(--primary-color);
+}
+
+.sidebar-recent-post a {
+    color: var(--text-green);
+    transition: color 0.3s ease;
+}
+
+.sidebar-recent-post a:hover {
+    color: var(--primary-color);
+}

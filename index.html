@@ -17,13 +17,16 @@
 <body class="vh-100">
     <!-- Header with Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <div class="container">
-                <!-- Logo and brand -->
-                <a href="#" class="navbar-brand">
-                    <img src="assets/icons/bogo-city-icon.png" alt="Bogo City Logo" width="33" height="33"> <span
-                        style="color: green; font-weight: bold;">City of Bogo</span>
-                </a>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container d-flex align-items-center">
+            <!-- GOVPH Link -->
+            <!-- <a href="https://www.gov.ph/" class="govph-link">GOVPH</a> -->
+
+            <!-- Logo and brand -->
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/icons/bogo-city-icon.png" alt="Bogo City Logo" width="33" height="33">
+                <span style="color: green; font-weight: bold;">City of Bogo</span>
+            </a>
 
                 <!-- Mobile toggle button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu"
@@ -254,6 +257,7 @@
             </div>
         </section>
         <!-- About End -->
+    
 
         <section class="bg-image-section">
             <div class="container">
@@ -280,6 +284,7 @@
             </div>
         </section>
 
+        
         <section class="theme light">
             <div class="container py-2">
                 <div class="h1 text-center text-dark" id="pageHeaderTitle">Recent Post</div>
@@ -290,7 +295,7 @@
                             alt="Image Title" />
                     </a>
                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title blue"><a href="#">3rd Underwater Clean-up Drive to Protect
+                        <h1 class="postcard__title blue"><a href="post1.html">3rd Underwater Clean-up Drive to Protect
                                 Capitancillo Islet Marine Sanctuary Conducted</a></h1>
                         <div class="postcard__subtitle small">
                             <time datetime="2020-05-25 12:00:00">
@@ -307,7 +312,10 @@
                             was conducted by the City in partnership with National Agencies and private individuals,
                             groups, and volunteers.</div>
                         <ul class="postcard__tagbox">
-                            <li class="tag__item"><i class="fas fa-arrow-right mr-2"></i>Read More</li>
+                            <li class="tag__item">
+                                <i class="fas fa-arrow-right mr-2"></i>
+                                <a href="post1.html" class="read-more-link">Read More</a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -318,7 +326,7 @@
                             alt="Image Title" />
                     </a>
                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title red"><a href="#">City Continues Incentives for Seniors
+                        <h1 class="postcard__title red"><a href="post2.html">City Continues Incentives for Seniors
                                 celebrating
                                 80th and 90th Natal Day</a></h1>
                         <div class="postcard__subtitle small">
@@ -340,8 +348,10 @@
                             City Social Welfare and
                             Development (CSWD) Office, led by Amabelle Mayor.</div>
                         <ul class="postcard__tagbox">
-                            <li class="tag__item"><i class="fas fa-arrow-right mr-2"></i>Read More</li>
-
+                            <li class="tag__item">
+                                <i class="fas fa-arrow-right mr-2"></i>
+                                <a href="post2.html" class="read-more-link">Read More</a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -352,11 +362,11 @@
                             alt="Image Title" />
                     </a>
                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title green"><a href="#">Livestock Raisers Forum Highlights Insurance,
+                        <h1 class="postcard__title green"><a href="post3.html">Livestock Raisers Forum Highlights Insurance,
                                 Biosecurity, and Feed Enhancers</a></h1>
                         <div class="postcard__subtitle small">
                             <time datetime="2020-05-25 12:00:00">
-                                <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2024
+                                <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th, 2024
                             </time>
                         </div>
                         <div class="postcard__bar"></div>
@@ -374,8 +384,10 @@
                             Councilor Sunny Oliamot, and
                             livestock raisers from various barangays to discuss essential...</div>
                         <ul class="postcard__tagbox">
-                            <li class="tag__item"><i class="fas fa-arrow-right mr-2"></i>Read More</li>
-
+                            <li class="tag__item">
+                                <i class="fas fa-arrow-right mr-2"></i>
+                                <a href="post3.html" class="read-more-link">Read More</a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -386,7 +398,7 @@
                             alt="Image Title" />
                     </a>
                     <div class="postcard__text t-dark">
-                        <h1 class="postcard__title yellow"><a href="#">Bogo City Expands Livelihood Program for ReRe
+                        <h1 class="postcard__title yellow"><a href="post4.html">Bogo City Expands Livelihood Program for ReRe
                                 Graduates with Hydroponics Initiative</a></h1>
                         <div class="postcard__subtitle small">
                             <time datetime="2020-05-25 12:00:00">
@@ -403,39 +415,88 @@
                             former drug dependents with innovative
                             opportunities to enhance their livelihoods.</div>
                         <ul class="postcard__tagbox">
-                            <li class="tag__item"><i class="fas fa-arrow-right mr-2"></i>Read More</li>
-
+                        <li class="tag__item">
+                            <i class="fas fa-arrow-right mr-2"></i>
+                            <a href="post4.html" class="read-more-link">Read More</a>
+                        </li>
                         </ul>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section>
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+        <section class="container-fluid p-0 bogo_carousel">
+            <div id="imageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                </div>
+        
+                <!-- Carousel Items -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/images/ " class="d-block w-100" alt="...">
+                        <img src="assets/images/Popcom Web.jpg" class="d-block w-100" alt="Popcom Web">
                     </div>
                     <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
+                        <img src="assets/images/DevTools Terminal.jpg" class="d-block w-100" alt="DevTools Terminal">
                     </div>
                     <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
+                        <img src="assets/images/Bogo City Hall Post Christmas Jan 17 2023.jpg" class="d-block w-100"
+                            alt="Bogo City Hall Post Christmas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/Cebu Province.jpg" class="d-block w-100" alt="Cebu Province">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/City of Bogo Celebrates Elderly Filipino Week 2022.jpg" class="d-block w-100"
+                            alt="Elderly Filipino Week 2022">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/CSE 2018.jpg" class="d-block w-100" alt="CSE 2018">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/DevTools DICT550.jpg" class="d-block w-100" alt="DevTools DICT550">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/DOH550.jpg" class="d-block w-100" alt="DOH550">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/RORO Port.jpg" class="d-block w-100" alt="RORO Port">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/Bogo School Tournament 2022.jpg" class="d-block w-100"
+                            alt="Bogo School Tournament 2022">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/City of Bogo Cebu Slider.jpg" class="d-block w-100" alt="City of Bogo Cebu">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
+        
+                <!-- Navigation Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
+
     </main>
 
     <footer>
