@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogo City History</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/navbar.css">
+    <style>
+        :root {
+            --primary-color: rgba(0, 128, 0, 0.80);
+            --primary-light: rgba(0, 128, 0, 0.15);
+            --primary-bg: rgb(227, 248, 223);
+            --text-dark: rgba(0, 0, 0, 0.8);
+            --text-green: rgb(0, 128, 0);
+            --transition-fast: 0.2s ease-out;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+        }
+
+        .page-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .content-section {
+            padding: 2rem 1rem;
+        }
+
+        .hymn {
+            background-color: var(--primary-light);
+            border-left: 5px solid var(--primary-color);
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hymn h2 {
+            color: var(--text-green);
+        }
+
+        .seal {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .seal img {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            color: var(--text-green);
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .history-content {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header class="page-header">
+
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container d-flex align-items-center">
+                <!-- GOVPH Link -->
+                <!-- <a href="https://www.gov.ph/" class="govph-link">GOVPH</a> -->
+        
+                <!-- Logo and brand -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/icons/bogo-city-icon.png" alt="Bogo City Logo" width="33" height="33">
+                    <span style="color: green; font-weight: bold;">City of Bogo</span>
+                </a>
+        
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navigation menu -->
+                <div class="offcanvas offcanvas-end" id="navMenu" tabindex="-1">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">City of Bogo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+        
+                    <div class="divider"></div>
+        
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto gap-3">
+                            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                            <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="services-page/service.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+        
+                                <ul class="dropdown-menu"
+                                    style="background-color: var(--primary-bg); border: 1px solid var(--primary-color);">
+                                    <li><a class="dropdown-item" href="services-page/service.html"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Notice
+                                            of
+                                            Payment</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Business
+                                            Permit/
+                                            Online Application</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Building
+                                            Permit</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Tax
+                                            Declaration</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Fencing
+                                            Permit</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Popcom</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Postal</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">NBI</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Veterinary</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">BTMO</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Civil
+                                            Registrar</a></li>
+                                </ul>
+                            </div>
+                            <li class="nav-item"><a href="transparency.html" class="nav-link">Transparency</a>
+                            </li>
+                            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                            <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1>History of Bogo City</h1>
+
+
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <div class="hymn">
+                <h2>Bogo Hymn</h2>
+                <p><strong>Lyrics by:</strong> Teodoro "Dodong" Pedroza</p>
+                <p>
+                    BOGO DAKBAYAN NGA MATAHUM,<br>
+                    SA KABISAYAN MO GIPADAYAG,<br>
+                    MGA KABATAAN MOG KASINGKASING,<br>
+                    KAY ANG KALANGITAN NAGDAN-AG SA IMONG DALAN.<br><br>
+                </p>
+                <p>
+                    ANG GASA SA KAHITAS-AN LAWOD SA KATUBHAN,<br>
+                    KALUBIHAN, UG MAY KAMAISAN<br>
+                    ANG IMONG KADAGATAN PUNO SA KAISDAAN<br>
+                    ANG IMONG PALIBOT SA KATAWHAN GIKAIB-GAN<br>
+
+                    BOGO DAKBAYAN NGA MATAHUM,<br>
+                    SA ‘YANG KATAWHAN GIPANGGA, GIAMPINGAN<br>
+                    SA ATONG LALAWIGAN,<br>
+                    MISULBONG ANG KAHAYAG DI HITUPNGAN<br>
+
+                    PADAYON BOGO, PADAYON<br>
+                    PADAYON AYAW PAGHUNONG<br>
+                    KAY ANG KALANGITAN NAGDAN-AG SA IMONG DALAN<br>
+                    KAY ANG KALANGITAN NAGDAN-AG SA IMONG….<br>
+                    DA… LAN…<br>
+                </p>
+            </div>
+
+            <div class="seal">
+                <img src="assets/images/Bogo City Logo.png" alt="Bogo City Seal" class="img-fluid">
+                <p><strong>Seal and Logo Symbolism:</strong></p>
+                <ul class="list-unstyled">
+                    <li><strong>Bogo Tree:</strong> Symbolizes the origin of Bogo's name and its deep-rooted history.
+                    </li>
+                    <li><strong>29 Stars:</strong> Representing the 29 barangays of Bogo City, signifying unity and
+                        diversity.</li>
+                    <li><strong>Core Values:</strong> Peace, Progress, and Prosperity guiding the city's development.
+                    </li>
+                    <li><strong>Cityhood:</strong> Officially became a city in 2007, marking a significant milestone.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Bogo's Historical Roots</h2>
+            <div class="history-content">
+                <p>Bogo – derived its name from a lone bogo tree or Garuda floribunda, which stood on the shore where Bogo wharf is now.
+                Under its spreading shade, natives and incoming traders in sailboats loaded with goods barter each others products.
+                Thus, the spot became a hub for traders and merchants as well as for nature lovers. Some of these traders stayed and
+                married locals of the place.</p>
+
+                <p>The year 1600 paved way in the founding of a settlement which was eventually transformed into a barangay where the Bogo
+                Central Extension now stands. While the barangay was part of another growing community of the north (now known as the
+                town of Daan Bantayan), natives enjoyed freedom of self-rule athough they continued to pay tributes and taxes to the
+                chieftain of Daan Bantayan. Eventually, the barangay grew in prominence and thus was separated from Daan Bantayan and
+                became known as the Town of Bogo.</p>
+
+                <p>In January 1850 the Bishop of Cebu, appointed Spanish friar Fr. Jaime Micalot as the first parish priest of Bogo and
+                decreed Saint Vincent Ferrer as the town’s patron saint. The first mass was celebrated in the hastily built chapel on
+                April 5, 1850, to coincide with the death anniversary of the patron saint. This chapel was later gutted by fire and a
+                new stone church was constructed at the place where the Bogo Town Plaza is now located..</p>
+
+                <p>Around this time, the Spanish authorities in Bogo introduced civil government. Pedro Aballe became the first Cabeza de
+                Barangay or mayor from 1864 to 1869. Senator Pedro L. Rodriguez, popularly known as the Grand Old Man of Bogo named one
+                of the oldest streets of the town after him. In those times, a cabeza de barangay took charge of the collection of
+                tributes to support the encomienda system of Spain. Later the tribute was substituted by the “papelita” (cedula) which
+                the individual paid in two installments annually. A taxpayer who could not afford to pay the cost of papelita in the
+                amount of P1.50 was made to work on local projects at fifty centavos a week. Because of this, a good number of
+                delinquent taxpayers escaped and hid in the mountain fastness of Bogo.</p>
+
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Bogo City: A Modern Perspective</h2>
+            <div class="history-content">
+                <p>Many historic moments have transpired in Bogo ever since, but to this date the most releavant would have to be the
+                proclamation of Cityhood of Bogo.</p>
+
+                <p>During the 13th Congress (2004–2007), the House of Representatives re-adopted former Joint Resolution No. 29 as Joint
+                Resolution No. 1 and forwarded it to the Senate for approval. However, the Senate again failed to approve the Joint
+                Resolution. Following the suggestion of Senator Aquilino Pimentel (Senate President), 16 municipalities filed, through
+                their respective sponsors, individual cityhood bills. The 16 cityhood bills each contained a common provision exempting
+                it from the ₱100 million income requirement of RA 9009 –</p>
+
+                <p>“Exemption from Republic Act No. 9009. — The City of x x x shall be exempted from the income requirement prescribed
+                under Republic Act No. 9009.”</p>
+
+                <p>On 22 December 2006, the House of Representatives approved the cityhood bills. The Senate also approved the cityhood
+                bills in February 2007, except that of Naga, Cebu which was passed on 7 June 2007. These cityhood bills lapsed into law
+                on various dates from March to July 2007 after President Gloria Macapagal-Arroyo failed to sign them</p>
+                
+                <p>The plebiscite for the cityhood of Bogo was held on 16 June 2007 in which 97.82% of voters of Bogo voted for cityhood.
+                Former representative Clavel Asas-Martinez announced that the cityhood of Bogo has been ratified. It became the third
+                component city of Cebu province.</p>
+                
+                <p>Although there had been multiple times the City lost its status due to court misunderstandings and revisions, on June
+                28, 2011 the Supreme Court directed the Clerk of Court to issue the entry of judgment on the cityhood case of 16
+                municipalities. This entry of judgment ended the cityhood battle of the 16 cities. Thus making it finally official from
+                “Municipality of Bogo” to now “City of Bogo”.</p>
+
+                <p>Today the City of Bogo stoods as a fast growing City in the north of Cebu. Although known for its sugarcane production
+                and fishery, the City has been open to commercial establishments catering the needs and wants of the locals and
+                visitors. The progressing City continues to excel, continuously developing business infrastructures for livelihood and
+                liesure sites for tourism. As a lumad na Bogohanon would say, “Padayon Bogo!”</p>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+        <div id="gwt-standard-footer"></div>
+        <script type="text/javascript">
+            (function (d, s, id) {
+                var js, gjs = d.getElementById('gwt-standard-footer');
+
+                js = d.createElement(s); js.id = id;
+                js.src = "//gwhs.i.gov.ph/gwt-footer/footer.js";
+                gjs.parentNode.insertBefore(js, gjs);
+            }(document, 'script', 'gwt-footer-jsdk'));
+        </script>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js" defer></script>
+</body>
+
+</html>
